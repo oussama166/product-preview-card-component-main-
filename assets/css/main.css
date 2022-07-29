@@ -1,0 +1,193 @@
+@import url("https://fonts.google.com/specimen/Montserrat");
+@import url("https://fonts.google.com/specimen/Fraunces");
+body {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  background-color: hsl(30deg, 38%, 92%);
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  color: black;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  font-family: "Fraunces";
+  font-weight: 700;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: black;
+  margin-top: 50px;
+  position: absolute;
+  bottom: 25px;
+  left: 38%;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+.container {
+  width: 45%;
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+  border-radius: 25px;
+  background-color: hsl(0deg, 0%, 100%);
+  box-shadow: 15px 10px 30px hsla(0deg, 0%, 0%, 0.1);
+}
+@media (max-width: 375px) {
+  .container {
+    width: 95%;
+    height: 100vh;
+    flex-direction: column;
+    margin-top: 25px;
+  }
+}
+.container .left {
+  width: 50%;
+  height: 100%;
+  background-image: url("../img/image-product-desktop.jpg");
+  background-size: cover;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+@media (max-width: 375px) {
+  .container .left {
+    width: 100%;
+    height: 40%;
+    background-image: url("../img/image-product-desktop.jpg");
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+}
+.container .right {
+  padding: 25px 0px 10px 35px;
+  width: 45%;
+  text-align: left;
+}
+@media (max-width: 375px) {
+  .container .right {
+    width: 95%;
+  }
+}
+.container .right .header-1 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 4.5px;
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: hsl(228deg, 12%, 48%);
+  opacity: 0.9;
+}
+@media (max-width: 375px) {
+  .container .right .header-1 {
+    letter-spacing: 5px;
+  }
+}
+.container .right h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-block: 10px;
+  width: 220px;
+  color: black;
+  line-height: 1;
+}
+@media (max-width: 375px) {
+  .container .right h1 {
+    font-size: 30px;
+    width: 281px;
+  }
+}
+.container .right p {
+  font-size: 15px;
+  font-weight: 700;
+  word-spacing: 1px;
+  color: hsl(228deg, 12%, 48%);
+  line-height: 1.5;
+  width: 260px;
+}
+@media (max-width: 375px) {
+  .container .right p {
+    font-size: 15px;
+    width: 281px;
+  }
+}
+.container .right .price {
+  display: block;
+}
+.container .right .price span {
+  font-family: "Fraunces";
+}
+.container .right .price span:first-child {
+  color: hsl(158deg, 36%, 37%);
+  font-size: 35px;
+}
+.container .right .price span:last-child {
+  color: hsl(228deg, 12%, 48%);
+  text-decoration: line-through;
+  font-size: 15px;
+  position: absolute;
+  top: 62%;
+  left: 62%;
+}
+@media (max-width: 375px) {
+  .container .right .price span:last-child {
+    top: 68%;
+    left: 46%;
+  }
+}
+.container .right button {
+  display: block;
+  width: 90%;
+  height: 40px;
+  background-color: hsl(158deg, 36%, 37%);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  line-height: 1.5px;
+  font-weight: 700;
+  margin-top: 15px;
+  word-spacing: 1px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease-out;
+}
+@media (max-width: 375px) {
+  .container .right button {
+    width: 85%;
+    height: 50px;
+  }
+}
+.container .right button:hover {
+  background-color: hsl(158deg, 31%, 30%);
+  transition: background-color 0.3s ease-in;
+}
+.container .right button::after {
+  content: url("../img/icon-cart.svg");
+  position: absolute;
+  width: 15px;
+  height: 25px;
+  color: white;
+  top: 32%;
+  left: 26%;
+}/*# sourceMappingURL=main.css.map */
